@@ -514,6 +514,35 @@ img {
   margin: 0 0 50px;
 }
 
+.portfol-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(101%);
+  transition: transform var(--main-animation);
+  background-color: var(--accent-cl-90);
+}
+
+.overlay-desc {
+  color: var(--main-bg-cl);
+  font-size: 18px;
+  line-height: calc(28 / 18);
+}
+
 .portfol-set {
   padding: 24px 20px;
   border-right: var(--cart-border-cl);
